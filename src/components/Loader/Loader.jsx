@@ -37,7 +37,7 @@ export default function Loader({ onComplete }) {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <span className={styles.name}>Stellr</span>
-          <span className={styles.dot}>  </span>
+          <span className={styles.dot}>&nbsp;</span>
           <span className={styles.grafix}>Grafix</span>
         </motion.div>
       </motion.div>
