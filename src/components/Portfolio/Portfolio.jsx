@@ -37,7 +37,7 @@ export default function Portfolio() {
       <div className="container">
         <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className={styles.header}>
           <p className="section-label">Our Work</p>
-          <h2 className="section-title">Portfolio</h2>
+          <h2 className="section-title">Gallery</h2>
           <p className="section-subtitle">A glimpse of what we've created for our clients across different industries.</p>
         </motion.div>
 
