@@ -16,17 +16,12 @@
 .logo { display: flex; align-items: center; gap: 10px; }
 
 .logoMark {
-  width: 36px;
-  height: 36px;
-  background: var(--primary);
-  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #0F172A;
 }
 
 .logoText { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--text); }
@@ -106,4 +101,10 @@ a.contactItem:hover { color: var(--primary); }
   .grid { grid-template-columns: 1fr; gap: 40px; }
   .brand { grid-column: auto; }
   .bottomInner { flex-direction: column; gap: 8px; text-align: center; }
+}
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }

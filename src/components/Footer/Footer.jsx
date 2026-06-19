@@ -18,7 +18,13 @@ export default function Footer() {
           <div className={styles.grid}>
             <div className={styles.brand}>
               <div className={styles.logo}>
-                <div className={styles.logoMark}>S</div>
+                <div className={styles.logoMark}>
+  <img
+    src="/favicon1.svg"
+    alt="Stellr Grafix Logo"
+    className={styles.logoImg}
+  />
+</div>
                 <span className={styles.logoText}>
                   Stellr<span className={styles.dot}> </span><span className={styles.gray}>Grafix</span>
                 </span>
