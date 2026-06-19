@@ -2,18 +2,27 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import styles from './Portfolio.module.css'
 
+
 const categories = ['All', 'Design', 'Print', 'Branding']
 
 const items = [
-  { id: 1, title: 'Brand Identity', cat: 'Branding', img: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80' },
-  { id: 2, title: 'Event Tarpaulin', cat: 'Print', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { id: 3, title: 'Business Cards', cat: 'Print', img: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80' },
-  { id: 4, title: 'Social Media Kit', cat: 'Design', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80' },
-  { id: 5, title: 'Logo Design', cat: 'Branding', img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80' },
-  { id: 6, title: 'Flyer Design', cat: 'Design', img: 'https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&q=80' },
-  { id: 7, title: 'Product Labels', cat: 'Print', img: 'https://images.unsplash.com/photo-1586864387789-628af9feed72?w=600&q=80' },
-  { id: 8, title: 'Birthday Invite', cat: 'Design', img: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80' },
-  { id: 9, title: 'Banner Design', cat: 'Print', img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80' },
+  // PRINT
+  { id: 1, title: 'Photo Tile Wall Display', cat: 'Print', img: '/images/portfolio/print.jpg' },
+  { id: 2, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print1.jpg' },
+  { id: 3, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print9.jpg' },
+  { id: 4, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print2.jpg' },
+  { id: 5, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print3.jpg' },
+  { id: 6, title: 'Plaque Recognition', cat: 'Print', img: '/images/portfolio/print7.jpg' },
+  { id: 7, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print4.jpg' },
+  { id: 8, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print5.jpg' },
+  { id: 9, title: 'Loyalty Card', cat: 'Print', img: '/images/portfolio/print6.jpg' },
+
+  // BRANDING
+  { id: 10, title: 'Logo Design', cat: 'Branding', img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80' },
+
+  // DESIGN
+  { id: 11, title: 'Social Media Kit', cat: 'Design', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80' },
+  { id: 12, title: 'Flyer Design', cat: 'Design', img: 'https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&q=80' },
 ]
 
 export default function Portfolio() {

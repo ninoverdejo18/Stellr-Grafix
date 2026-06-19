@@ -11,7 +11,7 @@ const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
 const info = [
   { icon: FiPhone, label: 'Phone', value: '0908 638 2191', href: 'tel:09086382191' },
   { icon: FiMail, label: 'Email', value: 'stellr.grafix@gmail.com', href: 'mailto:stellr.grafix@gmail.com' },
-  { icon: FiMapPin, label: 'Address', value: 'Caloocan City, Metro Manila, Philippines', href: null },
+  { icon: FiMapPin, label: 'Address', value: '987 Ilang-ilang Street, Barrio Concepcion Tala, Caloocan, Philippines, 1427', href: null },
 ]
 
 export default function Contact() {
@@ -90,7 +90,7 @@ export default function Contact() {
                 <div className={styles.mapSub}>Metro Manila, Philippines</div>
               </div>
               <a
-                href="https://www.google.com/maps/search/Caloocan+City+Metro+Manila"
+                href="https://maps.app.goo.gl/2pz31qFiWoidgP4D6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.mapLink}

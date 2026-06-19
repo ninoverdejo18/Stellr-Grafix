@@ -20,7 +20,7 @@ export default function Footer() {
               <div className={styles.logo}>
                 <div className={styles.logoMark}>S</div>
                 <span className={styles.logoText}>
-                  stellr<span className={styles.dot}>.</span><span className={styles.gray}>grafix</span>
+                  Stellr<span className={styles.dot}> </span><span className={styles.gray}>Grafix</span>
                 </span>
               </div>
               <p className={styles.tagline}>
@@ -53,7 +53,7 @@ export default function Footer() {
                   <FiMail size={14} /> stellr.grafix@gmail.com
                 </a>
                 <span className={styles.contactItem} style={{ cursor: 'default' }}>
-                  Caloocan City, Metro Manila
+                  987 Ilang-ilang, Barangay 188, Caloocan, 1427 Metro Manila
                 </span>
               </div>
             </div>
@@ -64,8 +64,8 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className="container">
           <div className={styles.bottomInner}>
-            <span>© 2026 stellr.grafix — All rights reserved.</span>
-            <span className={styles.poweredBy}>Powered by <span style={{ color: 'var(--primary)' }}>Nino</span></span>
+            <span>© 2024 Stellr Grafix — All rights reserved.</span>
+            <span className={styles.poweredBy}>Powered by <span style={{ color: 'var(--primary)' }}>Niño</span></span>
           </div>
         </div>
       </div>

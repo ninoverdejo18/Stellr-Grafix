@@ -5,9 +5,31 @@ import { FiTarget, FiEye, FiStar, FiZap, FiShield, FiHeart } from 'react-icons/f
 import styles from './About.module.css'
 
 const reasons = [
-  { icon: FiZap, title: 'Fast Turnaround', desc: 'Rush orders? No problem. We deliver quality prints on time, every time.' },
-  { icon: FiShield, title: 'Premium Quality', desc: 'We use top-grade materials and equipment for crisp, vibrant results.' },
-  { icon: FiHeart, title: 'Client-First', desc: 'Your satisfaction is our priority — revisions until you love it.' },
+  {
+    icon: FiShield,
+    title: 'BIR Registered',
+    desc: 'A legitimate and registered business committed to professional and reliable service.'
+  },
+  {
+    icon: FiStar,
+    title: 'PhilGEPS Registered',
+    desc: 'Qualified to serve government agencies and public sector projects through PhilGEPS.'
+  },
+  {
+    icon: FiZap,
+    title: 'Fast Turnaround',
+    desc: 'Rush orders? No problem. We deliver quality prints on time, every time.'
+  },
+  {
+    icon: FiHeart,
+    title: 'Customer-Focused',
+    desc: 'We work closely with every client to ensure satisfaction from design to final print.'
+  },
+  {
+    icon: FiShield,
+    title: 'Premium Quality',
+    desc: 'Using professional-grade materials and equipment for vibrant, long-lasting results.'
+  }
 ]
 
 function FadeIn({ children, delay = 0 }) {
@@ -35,9 +57,9 @@ export default function About() {
               <p className="section-label">About Us</p>
               <h2 className="section-title">Built in Caloocan.<br />Made for Everyone.</h2>
               <p className={styles.desc}>
-We are proudly serving clients in North Caloocan City and nearby areas. Stellr Grafix helps businesses, professionals, and organizations transform ideas into impactful visual solutions through creative graphic design, branding, and premium-quality printing services.
-As a locally owned business, we take pride in handling our work in-house—from design and production to quality control—allowing us to maintain high standards, reliable turnaround times, and personalized service for every client.
-From marketing materials and business essentials to large-format prints and customized products, we create work that strengthens brands, captures attention, and leaves lasting impressions. with their audience, and build a strong brand presence.
+We proudly serve clients in North Caloocan City and nearby areas, helping businesses, professionals, and organizations bring their ideas to life through creative graphic design, branding, and premium-quality printing services.
+
+As a locally owned business, we take pride in handling our work in-house—from design and production to quality control—allowing us to maintain high standards, reliable turnaround times, and personalized service while creating materials that strengthen brands, capture attention, and leave lasting impressions.
               </p>
             </FadeIn>
 
@@ -93,6 +115,7 @@ From marketing materials and business essentials to large-format prints and cust
                   <FiStar style={{ color: '#FFD700' }} size={20} />
                   <span className={styles.glassLabel}>Top Rated in Caloocan</span>
                 </div>
+                
               </div>
             </FadeIn>
           </div>

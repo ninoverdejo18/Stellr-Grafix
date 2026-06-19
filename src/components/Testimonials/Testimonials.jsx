@@ -4,12 +4,48 @@ import { FiStar } from 'react-icons/fi'
 import styles from './Testimonials.module.css'
 
 const reviews = [
-  { name: 'Maria Santos', role: 'Small Business Owner', avatar: 'MS', rating: 5, text: 'stellr.grafix designed our store signage and business cards. The quality is amazing and they delivered ahead of schedule. Will definitely order again!' },
-  { name: 'Kevin Reyes', role: 'Event Organizer', avatar: 'KR', rating: 5, text: 'Ordered 10 tarpaulins for our company event and everything looked sharp and professional. Fast turnaround, great price. Highly recommended!' },
-  { name: 'Jasmine Dela Cruz', role: 'Cake Business Owner', avatar: 'JD', rating: 5, text: 'They designed my product labels and stickers — so beautiful! My customers kept asking where I got them. 100% coming back for more orders.' },
-  { name: 'Angelo Bautista', role: 'College Student', avatar: 'AB', rating: 5, text: 'Needed a last-minute tarpaulin for our school event. They pulled it off in just a few hours and the print quality was excellent. Thank you!' },
-  { name: 'Lhea Mendoza', role: 'Bride', avatar: 'LM', rating: 5, text: 'Our wedding invitations were absolutely stunning. Every detail was perfect — exactly what I envisioned. stellr.grafix made our big day even more special.' },
-  { name: 'Carlo Villanueva', role: 'Restaurant Owner', avatar: 'CV', rating: 5, text: 'From menu designs to wall graphics, they handled everything with professionalism. The team is communicative and responsive. Best design shop in Caloocan!' },
+  {
+    name: 'Maria Santos',
+    role: 'May-ari ng Maliit na Negosyo',
+    avatar: 'MS',
+    rating: 5,
+    text: 'Napakaganda ng pagkakagawa ng aming signage at business cards. Malinis ang design, mataas ang kalidad ng print, at mas maaga pa sa inaasahang oras ang delivery. Siguradong uulit kami ng order!'
+  },
+  {
+    name: 'Kevin Reyes',
+    role: 'Event Organizer',
+    avatar: 'KR',
+    rating: 5,
+    text: 'Nagpagawa kami ng mga tarpaulin para sa company event at sobrang professional ng resulta. Malinaw ang print, mabilis ang serbisyo, at sulit sa presyo. Highly recommended!'
+  },
+  {
+    name: 'Jasmine Dela Cruz',
+    role: 'May-ari ng Cake Business',
+    avatar: 'JD',
+    rating: 5,
+    text: 'Sobrang ganda ng design ng product labels at stickers ko. Marami sa mga customer ko ang nagtatanong kung saan ko ito ipinagawa. Talagang babalik ako para sa susunod na orders.'
+  },
+  {
+    name: 'Angelo Bautista',
+    role: 'Estudyante',
+    avatar: 'AB',
+    rating: 5,
+    text: 'Kailangan namin ng tarpaulin nang biglaan para sa school event at agad nila itong nagawa. Maganda ang quality ng print at napakabilis ng serbisyo. Maraming salamat!'
+  },
+  {
+    name: 'Lhea Mendoza',
+    role: 'Bride',
+    avatar: 'LM',
+    rating: 5,
+    text: 'Napakaganda ng aming wedding invitations. Eksaktong-eksakto sa gusto naming disenyo at napakaganda ng pagkakaprint. Mas naging espesyal ang aming kasal dahil sa kanilang mahusay na trabaho.'
+  },
+  {
+    name: 'Carlo Villanueva',
+    role: 'May-ari ng Restaurant',
+    avatar: 'CV',
+    rating: 5,
+    text: 'Mula sa menu design hanggang sa mga wall graphics, maayos at propesyonal nilang naasikaso ang lahat. Madaling kausap at mabilis tumugon. Isa sa pinakamahusay na printing at design services na nasubukan namin.'
+  },
 ]
 
 export default function Testimonials() {

@@ -16,7 +16,7 @@ export default function Hero() {
         <div className={styles.orb2} />
         <div className={styles.grid} />
       </div>
-
+      
       <div className={`container ${styles.content}`}>
         <motion.div className={styles.badge} {...fadeUp(0)}>
           <span className={styles.badgeDot} />
