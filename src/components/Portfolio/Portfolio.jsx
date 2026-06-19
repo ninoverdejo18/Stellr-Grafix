@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import styles from './Portfolio.module.css'
 
-const categories = ['All', 'Design', 'Print', 'Branding']
+const categories = ['All', 'Print', 'Branding', 'Design']
 
 const items = [
   // PRINT
@@ -17,11 +17,17 @@ const items = [
   { id: 9, title: 'Loyalty Card', cat: 'Print', img: '/images/portfolio/print6.jpg' },
 
   // BRANDING
-  { id: 10, title: 'Logo Design', cat: 'Branding', img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80' },
-
+  { id: 10, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand1.jpg' },
+  { id: 11, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand2.jpg' },
+  { id: 12, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand3.jpg' },
+    { id: 13, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand4.jpg' },
+  { id: 14, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand5.jpg' },
+  { id: 15, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand6.jpg' },
+    { id: 16, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand7.jpg' },
+  { id: 17, title: 'T-Shirt Design', cat: 'Branding', img: '/images/portfolio/brand8.jpg' },
   // DESIGN
-  { id: 11, title: 'Social Media Kit', cat: 'Design', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80' },
-  { id: 12, title: 'Flyer Design', cat: 'Design', img: 'https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&q=80' },
+   { id: 18, title: 'T-Shirt Design', cat: 'Design', img: '/images/portfolio/design1.jpg' },
+    { id: 19, title: 'T-Shirt Design', cat: 'Design', img: '/images/portfolio/design2.jpg' },
 ]
 
 export default function Portfolio() {
