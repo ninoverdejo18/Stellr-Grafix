@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  min-height: calc(80vh - 70px);
+  min-height: 700px;
   margin-top: 70px;
 
   background-image:
