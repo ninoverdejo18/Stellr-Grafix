@@ -2,7 +2,6 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import styles from './Portfolio.module.css'
 
-
 const categories = ['All', 'Design', 'Print', 'Branding']
 
 const items = [
@@ -12,9 +11,9 @@ const items = [
   { id: 3, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print9.jpg' },
   { id: 4, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print2.jpg' },
   { id: 5, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print3.jpg' },
-  { id: 6, title: 'Plaque Recognition', cat: 'Print', img: '/images/portfolio/print7.jpg' },
+  { id: 6, title: 'Plaque Recognition', cat: 'Print', img: '/images/portfolio/print5.jpg' },
   { id: 7, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print4.jpg' },
-  { id: 8, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print5.jpg' },
+  { id: 8, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print7.jpg' },
   { id: 9, title: 'Loyalty Card', cat: 'Print', img: '/images/portfolio/print6.jpg' },
 
   // BRANDING
@@ -26,6 +25,7 @@ const items = [
 ]
 
 export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null)
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
   const [active, setActive] = useState('All')
@@ -64,8 +64,11 @@ export default function Portfolio() {
               whileHover={{ y: -4 }}
               layout
             >
-              <div className={styles.imgWrap}>
-                <img src={item.img} alt={item.title} loading="lazy" />
+       <div
+  className={styles.imgWrap}
+  onClick={() => setSelectedImage(item)}
+>
+  <img src={item.img} alt={item.title} loading="lazy" />
                 <div className={styles.overlay}>
                   <span className={styles.overlayTag}>{item.cat}</span>
                   <span className={styles.overlayTitle}>{item.title}</span>
@@ -79,6 +82,35 @@ export default function Portfolio() {
           <a href="#contact" className="btn-primary">Start Your Project →</a>
         </motion.div>
       </div>
+      {selectedImage && (
+  <div
+    className={styles.lightbox}
+    onClick={() => setSelectedImage(null)}
+  >
+    <div
+      className={styles.lightboxContent}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        className={styles.closeBtn}
+        onClick={() => setSelectedImage(null)}
+      >
+        ×
+      </button>
+
+      <img
+        src={selectedImage.img}
+        alt={selectedImage.title}
+        className={styles.lightboxImg}
+      />
+
+      <div className={styles.lightboxInfo}>
+        <span>{selectedImage.cat}</span>
+        <h3>{selectedImage.title}</h3>
+      </div>
+    </div>
+  </div>
+)}
     </section>
   )
 }
