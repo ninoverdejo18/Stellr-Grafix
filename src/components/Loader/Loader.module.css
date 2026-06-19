@@ -17,10 +17,6 @@
 }
 
 .logoMark {
-  width: 60px;
-  height: 60px;
-  background: var(--primary);
-  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,4 +73,11 @@
   height: 3px;
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   transform-origin: left;
+}
+
+.logoImage {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
 }

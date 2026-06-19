@@ -23,9 +23,13 @@ export default function Loader({ onComplete }) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className={styles.logoMark}>
-          <span className={styles.s}>S</span>
-        </div>
+       <div className={styles.logoMark}>
+  <img
+    src="/favicon1.svg"
+    alt="Stellr Grafix Logo"
+    className={styles.logoImage}
+  />
+</div>
         <motion.div
           className={styles.wordmark}
           initial={{ opacity: 0, x: -12 }}
