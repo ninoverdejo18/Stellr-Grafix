@@ -23,9 +23,12 @@ export default function Hero() {
           We are accepting clients — North Caloocan City & nearby areas
         </motion.div>
 
+
         <motion.h1 className={styles.headline} {...fadeUp(0.1)}>
-          Creative Designs<br />
-          <span className={styles.accent}>Professional</span> Prints<br />
+  <span className={styles.signature}>Creative</span>Designs
+ <br />
+  <span className={styles.accent}>Professional</span> Prints
+  <br />
           Lasting Impressions
         </motion.h1>
         <motion.p className={styles.sub} {...fadeUp(0.2)}>
