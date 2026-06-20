@@ -6,7 +6,7 @@ import styles from './Testimonials.module.css'
 const reviews = [
   {
     name: 'Maria Santos',
-    role: 'May-ari ng Maliit na Negosyo',
+    role: 'Business Owner',
     avatar: 'MS',
     rating: 5,
     text: 'Napakaganda ng pagkakagawa ng aming signage at business cards. Malinis ang design, mataas ang kalidad ng print, at mas maaga pa sa inaasahang oras ang delivery. Siguradong uulit kami ng order!'
@@ -20,14 +20,14 @@ const reviews = [
   },
   {
     name: 'Jasmine Dela Cruz',
-    role: 'May-ari ng Cake Business',
+    role: 'Business Owner',
     avatar: 'JD',
     rating: 5,
     text: 'Sobrang ganda ng design ng product labels at stickers ko. Marami sa mga customer ko ang nagtatanong kung saan ko ito ipinagawa. Talagang babalik ako para sa susunod na orders.'
   },
   {
     name: 'Angelo Bautista',
-    role: 'Estudyante',
+    role: 'Student',
     avatar: 'AB',
     rating: 5,
     text: 'Kailangan namin ng tarpaulin nang biglaan para sa school event at agad nila itong nagawa. Maganda ang quality ng print at napakabilis ng serbisyo. Maraming salamat!'
@@ -41,7 +41,7 @@ const reviews = [
   },
   {
     name: 'Carlo Villanueva',
-    role: 'May-ari ng Restaurant',
+    role: 'Business Owner',
     avatar: 'CV',
     rating: 5,
     text: 'Mula sa menu design hanggang sa mga wall graphics, maayos at propesyonal nilang naasikaso ang lahat. Madaling kausap at mabilis tumugon. Isa sa pinakamahusay na printing at design services na nasubukan namin.'

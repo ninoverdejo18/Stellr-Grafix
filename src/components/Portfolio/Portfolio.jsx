@@ -11,9 +11,9 @@ const items = [
   { id: 3, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print9.jpg' },
   { id: 4, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print2.jpg' },
   { id: 5, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print3.jpg' },
-  { id: 6, title: 'Plaque Recognition', cat: 'Print', img: '/images/portfolio/print5.jpg' },
+  { id: 6, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print5.jpg' },
   { id: 7, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print4.jpg' },
-  { id: 8, title: 'Personalized Sintra Board', cat: 'Print', img: '/images/portfolio/print7.jpg' },
+  { id: 8, title: 'Plaque Recognition', cat: 'Print', img: '/images/portfolio/print7.jpg' },
   { id: 9, title: 'Loyalty Card', cat: 'Print', img: '/images/portfolio/print6.jpg' },
 
   // BRANDING
