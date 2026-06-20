@@ -318,16 +318,16 @@
 ========================================================= */
 
 @media (max-width: 768px) {
-  .content {
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
+  .hero {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+      ),
+      url("/images/hero-bg-mobile.png");
 
-  .stats {
-    gap: 32px;
-  }
-
-  .scrollHint {
-    display: none;
+    background-size: cover;
+    background-position: center top; /* adjust as needed */
+    background-repeat: no-repeat;
   }
 }
