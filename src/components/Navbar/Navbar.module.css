@@ -132,17 +132,9 @@
 .hamburger:hover { background: var(--bg-glass); }
 
 .mobileMenu {
-  position: fixed;
-  top: 68px;
-  left: 0;
-  right: 0;
-
-  z-index: 9998;
-
-  background: rgba(15, 23, 42, 0.98);
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(20px);
   border-top: 1px solid var(--border);
-
   overflow: hidden;
 }
 
