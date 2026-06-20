@@ -82,13 +82,26 @@ export default function Navbar() {
             <ul className={styles.mobileLinks}>
               {navLinks.map(link => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className={styles.mobileLink}
-                    onClick={close}
-                  >
-                    {link.label}
-                  </a>
+<a
+  href={link.href}
+  className={styles.mobileLink}
+  onClick={(e) => {
+    e.preventDefault()
+
+    const target = document.querySelector(link.href)
+
+    close()
+
+    setTimeout(() => {
+      target?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }, 100)
+  }}
+>
+  {link.label}
+</a>
                 </li>
               ))}
 
